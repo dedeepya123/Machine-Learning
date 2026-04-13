@@ -1,7 +1,7 @@
 import numpy as np
 X=np.random.randn(100)
 #Y=2*X+1+noise
-Y=2*X+1+np.random.randn(100) 
+Y=2*X+1+np.random.randn(100)*0.1
 
 #initialize parameters 
 m,b=0,0
