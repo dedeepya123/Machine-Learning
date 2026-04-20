@@ -1,4 +1,4 @@
-# Overfitting – Intuition as a Story
+# Overfitting
 
 ## 1. Where we are coming from
 
