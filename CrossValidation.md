@@ -50,7 +50,6 @@ Also consider: high mean + low variance across folds = best choice
 - Very small data → LOOCV
  9. Key Thing
 - Cross Validation improves reliability of model evaluation and helps in selecting the best model configuration.
-
-CV does NOT replace regularization
-CV helps choose how much regularization to appl
+- CV does NOT replace regularization CV helps choose how much regularization to apply
  
+
