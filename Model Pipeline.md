@@ -10,19 +10,23 @@ Goal:
 - Shuffle data
 - Split into: Train set, Validation Set, test Set
 4. Define Model
+
 Choose model:
-    Linear / Logistic / Softmax / etc.
+    - Linear / Logistic / Softmax / etc.
+
 Model form:
-    z = XW + b
-    y_pred = activation(z)   (if required)
+- z = XW + b
+-  y_pred = activation(z)   (if required)
 5. Initialize Parameters
-W = zeros or small random values
-b = 0
+- W = zeros or small random values
+- b = 0
+
 Hyperparameters:
-    learning_rate
-    epochs
-    regularization strength (λ)
+- learning_rate
+- epochs
+- regularization strength (λ)
 6. Training Loop
+
 For each epoch:
     1. Forward Pass
         z = X_train @ W + b
