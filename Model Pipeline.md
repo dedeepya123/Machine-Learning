@@ -3,6 +3,7 @@ End to End Model Pipleine
 Given:
 - X → input features (N, D)
 - y → target values (N,) or (N,1)
+
 Goal:
   - Learn model parameters that map X → y
 3. Data Preparation
