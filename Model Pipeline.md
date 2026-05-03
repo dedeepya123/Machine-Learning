@@ -1,11 +1,11 @@
 End to End Model Pipleine
 1. Problem Setup
 Given:
-    X → input features (N, D)
-    y → target values (N,) or (N,1)
+- X → input features (N, D)
+- y → target values (N,) or (N,1)
 Goal:
     Learn model parameters that map X → y
-2. Data Preparation
+3. Data Preparation
  1. Shuffle data
  2. Split into:
     Train set
