@@ -1,4 +1,4 @@
-** End to End Training Pipeline 
+End to End Model Pipleine
 1. Problem Setup
 Given:
     X → input features (N, D)
