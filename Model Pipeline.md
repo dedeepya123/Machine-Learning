@@ -7,25 +7,22 @@ Given:
 Goal:
   - Learn model parameters that map X → y
 3. Data Preparation
- 1. Shuffle data
- 2. Split into:
-    Train set
-    Validation set
-    Test set
-3. Define Model
+- Shuffle data
+- Split into: Train set, Validation Set, test Set
+4. Define Model
 Choose model:
     Linear / Logistic / Softmax / etc.
 Model form:
     z = XW + b
     y_pred = activation(z)   (if required)
-4. Initialize Parameters
+5. Initialize Parameters
 W = zeros or small random values
 b = 0
 Hyperparameters:
     learning_rate
     epochs
     regularization strength (λ)
-5. Training Loop
+6. Training Loop
 For each epoch:
     1. Forward Pass
         z = X_train @ W + b
@@ -43,23 +40,23 @@ For each epoch:
         b = b - lr * db
     5. Validation (optional but recommended)
         compute val_loss using X_val
-6. Convergence Check (optional)
+7. Convergence Check (optional)
 Stop if:
     loss stops decreasing
     OR epochs completed
-7. Final Evaluation
+8. Final Evaluation
 Use test set:
     Linear → MSE
     Classification → Accuracy / Precision / Recall / F1
-8. Prediction Function
+9. Prediction Function
 predict(X):
     z = X @ W + b
     return processed output
-9. (Optional) Hyperparameter Tuning
+10. (Optional) Hyperparameter Tuning
 For each hyperparameter value:
     evaluate using validation set or cross-validation
 Select best configuration
-10. Key Insight
+11. Key Insight
 All ML models follow the same core loop:
     Prediction → Loss → Gradient → Update
 Only these change:
