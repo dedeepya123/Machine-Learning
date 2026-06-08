@@ -184,3 +184,24 @@ Researchers derived these laws by training many models of different scales and f
 The exponent α determines how quickly performance improves with scale and reflects diminishing returns.
 
 The key insight was that larger models continued improving in a smooth, predictable way, suggesting that scaling itself could be a major driver of capability.
+
+At first glance, next-token prediction appears unrelated to capabilities such as translation, reasoning, coding, and question answering.
+
+However, predicting language accurately requires learning the underlying structures that generate language.
+
+To reduce prediction loss, a model must learn:
+
+- Grammar and syntax
+- Semantic meaning
+- World knowledge
+- Entity relationships
+- Programming patterns
+- Logical and reasoning patterns
+
+These representations are not explicitly supervised. They emerge because they improve prediction.
+
+This led researchers to view language modeling not as word guessing, but as learning increasingly accurate internal models of the world reflected in language.
+
+Scaling improves a model's ability to represent these structures, which explains why lower loss often correlates with stronger capabilities.
+
+Capabilities are therefore not separate from the training objective; they emerge as useful tools for minimizing prediction loss.
