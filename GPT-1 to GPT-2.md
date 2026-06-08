@@ -41,3 +41,13 @@ GPT-2 shifted the community's perspective from:
 to:
 
 "Pretraining may already be learning much of the task."
+
+Scaling laws showed that increasing parameters, data, and compute leads to predictable improvements in model performance.
+
+Researchers initially expected only gradual benchmark improvements. Instead, larger models displayed qualitatively stronger behaviors such as in-context learning, instruction following, knowledge retrieval, and long-range reasoning.
+
+One explanation is that representations improve continuously, while benchmarks reveal capabilities only after a threshold is crossed.
+
+Another explanation is that larger models can learn new internal algorithms and circuits that smaller models cannot represent effectively.
+
+The key insight from GPT-2 was that many capabilities appear to emerge during pretraining itself, suggesting that scale may be a major driver of intelligence in language models.
