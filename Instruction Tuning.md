@@ -323,3 +323,29 @@ However, those capabilities were not always robustly activated by natural langua
 Researchers hypothesized that capabilities already existed and that a small amount of supervised fine-tuning on instruction datasets could teach the model how to map instructions to the appropriate behavior.
 
 Instruction tuning therefore focuses more on capability elicitation and task routing than on creating entirely new capabilities.
+
+## Why Instruction Tuning alone was not sufficient?
+
+Instruction tuning significantly improved instruction following, but an important problem remained.
+
+Instruction tuning teaches a model what task to perform, but not necessarily how humans prefer the task to be performed.
+
+Many tasks have multiple valid answers. Humans often prefer answers that are clearer, safer, more helpful, better organized, and more conversational.
+
+Supervised fine-tuning struggles to capture these preferences because it learns from fixed target outputs.
+
+Researchers realized that humans are often better at ranking answers than writing ideal answers.
+
+This led to RLHF (Reinforcement Learning from Human Feedback).
+
+The key shift was from learning correctness to learning human preferences.
+
+A useful mental model is:
+
+Pretraining → Learn capabilities
+
+Instruction Tuning → Learn task following
+
+RLHF → Learn human preferences
+
+Together these stages transformed language models into conversational assistants such as ChatGPT.
