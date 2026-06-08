@@ -119,3 +119,30 @@ In-context learning is the mechanism that allows the model to infer the current 
 ## One-Line Summary
 
 In-context learning is the ability of a pretrained language model to temporarily infer and perform a task from examples in the prompt, using activations rather than weight updates.
+
+
+## Why does few-shot prompting improve with scale?
+
+During pretraining, language models repeatedly encounter patterns where earlier text provides examples and later text follows the same structure.
+
+To reduce next-token prediction loss, the model learns to identify patterns inside the current context and use them when predicting future tokens.
+
+In-context learning is therefore not weight learning. No parameters are updated during inference.
+
+Instead:
+
+Prompt
+→ Creates activations
+→ Activations encode the inferred task
+→ Model applies capabilities learned during pretraining
+
+Larger models possess richer representations and more sophisticated circuits, allowing them to:
+
+1. Detect patterns from examples
+2. Infer the underlying task
+3. Retrieve relevant knowledge
+4. Apply the pattern to new inputs
+
+Thus scaling improves not only knowledge storage but also the ability to learn from context during a single forward pass.
+
+GPT-3 demonstrated that language models can adapt behavior using examples present in the prompt, even when weights remain fixed. This phenomenon became known as in-context learning.
