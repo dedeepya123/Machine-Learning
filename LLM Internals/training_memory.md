@@ -28,7 +28,7 @@ FFN outputs
 Layer outputs
 Stored for backpropagation
 
-Important Insight
+## Important Insight
 
 Parameter memory depends on:
 
@@ -44,7 +44,7 @@ Layers
 ×
 Hidden Dimension
 
-Deep Intuition
+## Deep Intuition
 
 Parameters store learned knowledge.
 
