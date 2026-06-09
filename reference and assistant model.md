@@ -80,22 +80,7 @@ Probability difference becomes huge.
 KL penalty becomes large.
 
 Even More Precise
-
-Mathematically, PPO-RLHF is trying to keep:
-
-π
-assistant
-	​
-
-(token∣context)
-
-close to
-
-π
-reference
-	​
-
-(token∣context)
+<img width="807" height="266" alt="image" src="https://github.com/user-attachments/assets/f43fd7cd-9a21-4c4f-b3f2-b78e40f22dbe" />
 
 at every generation step.
 
