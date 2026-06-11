@@ -64,3 +64,7 @@ Researcher Question:
 Can finished requests be immediately replaced with new requests?
 
 This idea led to Dynamic / Continuous Batching.
+
+## Summary
+
+Static batching groups requests into fixed batches before execution. While it improves GPU utilization compared to single-request inference, it increases latency because requests must wait for a batch to form. It also wastes GPU resources during decoding because requests finish at different times, leaving idle batch slots that cannot be reused until the entire batch completes.
