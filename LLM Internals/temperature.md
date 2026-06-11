@@ -89,3 +89,11 @@ Researchers wanted:
 More diversity without allowing obviously bad tokens.
 
 This led to Top-k Sampling.
+
+## Summary
+Temperature is a decoding parameter applied to logits before softmax:
+Lower temperatures sharpen the probability distribution and make generation more deterministic.
+
+Higher temperatures flatten the distribution and increase randomness and diversity.
+
+Temperature controls how strongly differences between logits influence token selection.
