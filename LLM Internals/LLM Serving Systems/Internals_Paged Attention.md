@@ -61,3 +61,13 @@ Deep Intuition:
 KV cache becomes a collection of pages instead of one large contiguous array.
 
 This is conceptually similar to virtual memory in operating systems.
+
+## Summary 
+Prefill allocates enough logical blocks to hold prompt KV cache.
+Each logical block maps to a physical GPU memory block.
+Generated tokens are appended into the current last block.
+A new physical block is not allocated for every token.
+New block allocation happens only when the current block becomes full.
+KV cache therefore grows block-by-block as generation proceeds.
+This is conceptually similar to pages in OS memory management.
+Small unused space may exist in the final block (internal fragmentation), but overall memory utilization is much better than requiring large contiguous allocations.
