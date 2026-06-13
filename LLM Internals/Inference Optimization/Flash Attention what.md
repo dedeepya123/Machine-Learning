@@ -21,3 +21,6 @@ Benefits:
 * Longer context lengths
 
 FlashAttention is an exact attention algorithm, not an approximation.
+
+FlashAttention divides the huge attention computation into tiles. A query block attends to one key block at a time. Each tile computes a small matrix multiplication QtileKtileT
+Running softmax statistics (m,l,n) are updated immediately, and the tile is discarded. Eventually every query token has attended to every key token, but without materializing the full attention matrix.
