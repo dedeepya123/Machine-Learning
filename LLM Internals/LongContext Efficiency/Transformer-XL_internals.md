@@ -153,3 +153,6 @@ KV Cache:
 Store K,V directly
 
 You can almost think of Transformer-XL as an ancestor of memory-based ideas that eventually influenced later architectures.
+
+
+At layer l, chunk 2 computes Q from its current representations, while K and V are built from (previous memory at layer l) + (current chunk representations), allowing the current chunk to attend into the past.
