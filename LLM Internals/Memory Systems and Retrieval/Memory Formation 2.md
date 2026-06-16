@@ -124,3 +124,5 @@ The model never truly knows importance.
 It estimates importance using heuristics and signals.
 
 Memory formation is a prediction problem, not a certainty problem.
+
+And this is exactly why memory systems are difficult: before you can decide how to store a memory, you first need to decide whether it's worth storing at all. Researchers still don't have a perfect solution to that problem.
