@@ -1,0 +1,119 @@
+Embeddings - Why They Work
+
+Problem:
+
+Researchers wanted meaning to become mathematical.
+
+Need a way to represent meanings as locations.
+
+---
+
+Question:
+
+How should coordinates be assigned?
+
+Researchers did not want humans to manually define them.
+
+---
+
+Key Insight:
+
+Words that appear in similar contexts tend to have similar meanings.
+
+This is the Distributional Hypothesis.
+
+---
+
+Examples:
+
+dog barks
+
+dog runs
+
+cat runs
+
+cat meows
+
+car drives
+
+---
+
+dog and cat share contexts.
+
+car appears in different contexts.
+
+Therefore:
+
+dog and cat should have similar representations.
+
+---
+
+Meaning can be learned from context.
+
+Context ≈ Meaning
+
+---
+
+Training Objective:
+
+Predict surrounding words.
+
+Example:
+
+"The dog chased the ___"
+
+"The cat chased the ___"
+
+Both require similar predictions.
+
+---
+
+As training progresses:
+
+Words that help make similar predictions move closer together in vector space.
+
+---
+
+Meaning emerges from prediction.
+
+Nobody explicitly teaches:
+
+dog ≈ cat
+
+The model discovers it automatically.
+
+---
+
+Process:
+
+Prediction
+↓
+Context
+↓
+Vector Geometry
+↓
+Meaning
+
+---
+
+Connection To Memory Retrieval:
+
+Query:
+
+"Where does Alice live?"
+
+Memory:
+
+"Alice resides in Paris."
+
+Even though words differ,
+
+embeddings place live and reside nearby.
+
+Therefore query and memory become close in semantic space.
+
+---
+
+Main Insight:
+
+Embeddings work because context creates meaning and training converts that meaning into geometry.
