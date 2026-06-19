@@ -1,0 +1,141 @@
+Dense Retrieval Training
+
+Problem:
+
+Need embeddings that are specifically good for retrieval.
+
+Goal:
+
+Relevant query-document pairs should be close.
+
+Irrelevant pairs should be far.
+
+---
+
+Training Data
+
+Positive Pair:
+
+(Query, Relevant Document)
+
+Example:
+
+Where does Alice live?
+
+Alice lives in Paris.
+
+---
+
+Negative Pair:
+
+(Query, Irrelevant Document)
+
+Example:
+
+Where does Alice live?
+
+Bob likes football.
+
+---
+
+Objective
+
+sim(Query, Positive)
+
+should be high.
+
+sim(Query, Negative)
+
+should be low.
+
+---
+
+Geometry Goal
+
+Relevant pairs move closer.
+
+Irrelevant pairs move farther.
+
+---
+
+Dual Encoder Architecture
+
+Query
+
+↓
+
+Query Encoder
+
+↓
+
+q
+
+---
+
+Document
+
+↓
+
+Document Encoder
+
+↓
+
+d
+
+---
+
+Similarity:
+
+q·d
+
+or
+
+Cosine Similarity
+
+---
+
+Contrastive Learning
+
+Teach model:
+
+These belong together.
+
+These do not.
+
+Model learns retrieval geometry automatically.
+
+---
+
+DPR (Dense Passage Retrieval)
+
+One of the first major dense retrieval systems.
+
+Uses dual encoders.
+
+Optimizes positive documents to rank above negatives.
+
+---
+
+Important Insight
+
+Word Embeddings:
+
+Trained for language prediction.
+
+Retriever Embeddings:
+
+Trained for document retrieval.
+
+Different objective.
+
+Different geometry.
+
+---
+
+Next Question
+
+Should an entire document be compressed into one vector?
+
+Or should retrieval preserve token-level information?
+
+This leads to Late Interaction Models and ColBERT.
